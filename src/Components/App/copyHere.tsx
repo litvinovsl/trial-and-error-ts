@@ -23,4 +23,10 @@ function App() {
   );
 }
 
-export default App;
+interface MyMessageProps {
+  message: string;
+}
+
+function MyMessage(props: MyMessageProps) {
+  return <div>My message is: {props.message}</div>;
+}
