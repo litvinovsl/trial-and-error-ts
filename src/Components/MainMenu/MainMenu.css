@@ -10,7 +10,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-
+    gap: 20px
 }
 
 .main-menu__link{
@@ -19,5 +19,14 @@
     font-weight: 500;
     font-size: 32px;
     line-height: 36px;
-    
+    border: 2px rgb(26, 24, 24) solid;
+    transform: skewx(-18.6deg);
+    height: 43px;
+    width: 400px;
+    text-align: center;
+    transition: opacity .3s ease-in-out;
+}
+
+.main-menu__link:hover {
+    opacity: .6;
 }
