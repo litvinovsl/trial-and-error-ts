@@ -1,11 +1,14 @@
+@import url(./vendors/normalize.css);
+@import url(./vendors/fonts/inter.css);
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(32, 28, 28);
+  background: linear-gradient(45deg, #e9cdb9, #a7d2e6);
+  height: 100%;
+  /* background-color: rgb(32, 28, 28); */
 }
 
 code {
