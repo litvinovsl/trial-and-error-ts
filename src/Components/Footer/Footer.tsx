@@ -1,14 +1,16 @@
-import React, {FC} from 'react';
+import React, { FC } from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 
-
 function Footer() {
-  return (
-    <div className="footer">
-         <p className='footer__copyright'>Litvinov Sergey.</p>
-     </div>
-  );
+    const date = new Date();
+    const year = date.getFullYear();
+    return (
+        <div className="footer">
+            <a className='footer__link' href='https://github.com/litvinovsl' rel="noreferrer" target="_blank">GitHub</a>
+            <p className='footer__copyright'>© {year}. Litvinov Sergey.</p>
+        </div>
+    );
 }
 
 export default Footer;

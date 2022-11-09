@@ -8,6 +8,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(45deg, #e9cdb9, #a7d2e6);
   height: 100%;
+  padding-left: 70px;
+  padding-right: 70px;
   /* background-color: rgb(32, 28, 28); */
 }
 
