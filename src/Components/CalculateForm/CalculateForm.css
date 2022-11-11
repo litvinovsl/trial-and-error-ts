@@ -1,0 +1,30 @@
+.calculte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calculte__form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.calculte__input-text{
+    background-color: transparent;
+    border: none;
+    border: 1px solid rgb(166, 189, 190);
+    border-bottom: solid #667492 1px;
+    outline: none;
+    padding-bottom: 16px;
+    width: 410px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    color: rgb(0, 0, 0);
+}
+
+.calculte__input-text:invalid{
+    border-bottom: #882b2b solid 1px;
+    color: #882b2b;
+}
