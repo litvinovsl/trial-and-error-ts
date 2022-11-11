@@ -4,6 +4,7 @@ import './App.css';
 import MainMenu from '../MainMenu/MainMenu';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
+import CalculateForm from '../CalculateForm/CalculateForm';
 
 function App() {
   return (
@@ -14,7 +15,9 @@ function App() {
         <Route exact path="/">
           <MainMenu />
         </Route>
-        {/* </Route> */}
+        <Route exact path="/credit-calculator">
+          <CalculateForm />
+        </Route>
       </Switch>
       <Footer/>
 
