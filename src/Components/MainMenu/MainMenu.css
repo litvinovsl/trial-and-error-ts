@@ -9,7 +9,7 @@
 .main-menu__title{
     font-size: 45px;
     color: rgb(10, 10, 10);
-    /* font-family: 'Inter'; */
+    font-family: 'Inter';
     margin: 0;
 }
 
@@ -21,20 +21,27 @@
     gap: 20px
 }
 
+.main-menu__link-border{
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 47px;
+    width: 400px;
+    font-size: 1.8rem;
+    background: #aad4c8;
+    letter-spacing: 0.1rem;
+    box-shadow: 0px 0px 8px rgb(177, 177, 177);
+    transform: scale(1);
+    transition: all .2s;
+}
+
 .main-menu__link{
     text-decoration: none;
     color: rgb(24, 39, 36);
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 36px;
-    border: 2px rgb(26, 24, 24) solid;
-    transform: skewx(-18.6deg);
-    height: 43px;
-    width: 400px;
-    text-align: center;
-    transition: opacity .3s ease-in-out;
 }
 
-.main-menu__link:hover {
-    opacity: .6;
+.main-menu__link-border:hover {
+    background: #81bfaa;
+    transform: scale(1.05);
 }
