@@ -63,7 +63,12 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 18px;
-    top: 13px;
+    top: -10px;
+
+    background-color: #ccdbe2;
+    padding-left: 4px;
+    padding-right: 4px;
+
     left: 10px;
     color: #434e69;
     cursor: text;
@@ -75,4 +80,23 @@
     background-color: #ccdbe2;
     padding-left: 4px;
     padding-right: 4px;
+}
+
+.calculte__input-num{
+    appearance: none;
+    -moz-appearance:textfield;
+}
+
+.calculte__input-num::-webkit-outer-spin-button,
+.calculte__input-num::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.calculate__submit{
+    background-color: #9ecee4;
+    border: none;
+    border: 1px solid #538399;
+    height: 38px;
+    color: #222c3f;
 }
