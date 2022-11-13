@@ -20,10 +20,11 @@ function App() {
           <CalculateForm />
         </Route>
         <Route exact path="/credit-calculator/calculation">
-          <Calculation />
+          <Calculation
+            interestPaid={95} />
         </Route>
       </Switch>
-      <Footer/>
+      <Footer />
 
     </div>
 
