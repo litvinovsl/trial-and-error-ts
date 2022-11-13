@@ -1,4 +1,5 @@
 import {  useState } from 'react';
+import { useHistory, useLocation } from 'react-router-dom';
 import './CalculateForm.css';
 
 function CalculateForm() {
@@ -7,6 +8,9 @@ function CalculateForm() {
     const [interestRate, setInterestRate] = useState('');
     const [numberOfMonths, setNumberOfMonths] = useState('');
     const [paymentDay, setPaymentDay] = useState('');
+    const history = useHistory();
+    const location = useLocation();
+
 
     function handleChangeSum(e: React.ChangeEvent<HTMLInputElement>) {
         setSum(e.target.value);
@@ -29,10 +33,15 @@ function CalculateForm() {
         setPaymentDay(e.target.value);
     }
 
+    function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+        event.preventDefault();
+        history.push(location.pathname + '/calculation')
+    }
+
     return (
         <section className="calculte">
             <h1 className='calculte__title'>Расчет кредита</h1>
-            <form className='calculte__form'>
+            <form className='calculte__form' onSubmit={handleSubmit}>
                 <label className='calculate__label'>
                     <input className='calculte__input calculte__input-num' onChange={handleChangeSum} type='number' id='sum' name='sum' max={50000000} min={1000} />
                     <span className='calculte__span' 
