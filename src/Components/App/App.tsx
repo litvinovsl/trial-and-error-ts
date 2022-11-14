@@ -6,6 +6,7 @@ import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import CalculateForm from '../CalculateForm/CalculateForm';
 import Calculation from '../Calculation/Calculation';
+import AppCalculator from '../CALCULATOR/AppCalculator/AppCalculator';
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
     numberOfMonths: 24,
     paymentDay: 15,
     percentages: 95,
-}
+  }
 
   return (
     <div>
@@ -34,6 +35,9 @@ function App() {
             sum={data.sum}
             numberOfMonths={data.numberOfMonths}
             interestPaid={data.percentages} />
+        </Route>
+        <Route exact path='/calculator'>
+          <AppCalculator />
         </Route>
       </Switch>
       <Footer />

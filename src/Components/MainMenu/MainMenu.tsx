@@ -12,7 +12,7 @@ const MainMenu: FC =() => {
           <Link to='/credit-calculator' className='main-menu__link'>Кредитный калькулятор</Link>
           </div>
           <div className='main-menu__link-border'>
-          <Link to='/' className='main-menu__link'>\не готово\</Link>
+          <Link to='/calculator' className='main-menu__link'>Калькулятор</Link>
           </div>
           {/* <Link to='/' className='main-menu__link'>\не готово\</Link> */}
          </nav>
