@@ -20,11 +20,11 @@ function Navigation({onClickSuda, onClickTyda, isCalculation, isConverter} : Nav
     <div className="navigation">
         <div className='navigation__conteiner'>
             <button 
-            className={`${isCalculation ? 'navigation__button-action' : 'navigation__button'}`}
-            onClick={onClickSuda}>сюда</button>
+            className={`${isCalculation ? 'navigation__button navigation__button-action' : 'navigation__button navigation__button-inactive'}`}
+            onClick={onClickSuda}>Калькулятор</button>
             <button 
-            className={`${isConverter ? 'navigation__button-action' : 'navigation__button'}`}
-            onClick={onClickTyda}>туда</button>
+            className={`${isConverter ? 'navigation__button navigation__button-action' : 'navigation__button navigation__button-inactive'}`}
+            onClick={onClickTyda}>Конвертер</button>
         </div>
     </div>
   );
