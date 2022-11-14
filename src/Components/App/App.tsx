@@ -8,6 +8,16 @@ import CalculateForm from '../CalculateForm/CalculateForm';
 import Calculation from '../Calculation/Calculation';
 
 function App() {
+
+  const data = {
+    sum: 100000,
+    creditStartDate: '26.04.2022',
+    interestRate: 10,
+    numberOfMonths: 24,
+    paymentDay: 15,
+    percentages: 95,
+}
+
   return (
     <div>
       <Header />
@@ -21,7 +31,9 @@ function App() {
         </Route>
         <Route exact path="/credit-calculator/calculation">
           <Calculation
-            interestPaid={95} />
+            sum={data.sum}
+            numberOfMonths={data.numberOfMonths}
+            interestPaid={data.percentages} />
         </Route>
       </Switch>
       <Footer />
