@@ -1,4 +1,4 @@
-import React from 'react';
+import {useEffect} from 'react';
 import './Navigation.css';
 
 interface NavigationProps {
@@ -10,13 +10,21 @@ interface NavigationProps {
 
 function Navigation({onClickSuda, onClickTyda, isCalculation, isConverter} : NavigationProps) {
 
+//  useEffect(() => {
+//     console.log('suda: ', isCalculation, ', tuda: ', isConverter)
+//  }, [isCalculation, isConverter])
+
 
   return (
 
     <div className="navigation">
         <div className='navigation__conteiner'>
-            <button onClick={onClickSuda}>сюда</button>
-            <button onClick={onClickTyda}>туда</button>
+            <button 
+            className={`${isCalculation ? 'navigation__button-action' : 'navigation__button'}`}
+            onClick={onClickSuda}>сюда</button>
+            <button 
+            className={`${isConverter ? 'navigation__button-action' : 'navigation__button'}`}
+            onClick={onClickTyda}>туда</button>
         </div>
     </div>
   );

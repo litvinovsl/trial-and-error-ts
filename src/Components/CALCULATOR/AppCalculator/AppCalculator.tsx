@@ -15,15 +15,18 @@ function AppCalculator(){
 
 
   function handleClickSuda() {
-    console.log('suda')
     setIsCalculation(true);
     setIsConverter(false);
+    // console.log('suda: ', isCalculation, ', tuda: ', isConverter)
+
   }
 
   function handleClickTuda() {
-    console.log('tuda')
+    // console.log('tuda')
     setIsCalculation(false);
     setIsConverter(true);
+    // console.log('suda: ', isCalculation, ', tuda: ', isConverter)
+
   }
 
   return (
