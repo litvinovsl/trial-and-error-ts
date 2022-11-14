@@ -6,11 +6,10 @@ import './AppCalculator.css';
 function AppCalculator() {
 
   return (
-    <div>
+    <div className='app-calculator'>
       <Navigation />
       <Switch>
       </Switch>
-
     </div>
 
   );
