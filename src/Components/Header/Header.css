@@ -1,0 +1,17 @@
+.header{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    border-bottom: 1px solid rgb(213, 246, 250);
+}
+
+.header__link-logo{
+    height: 50px;
+}
+
+.header__logo{
+    width: 50px;
+    height: 50px;
+}

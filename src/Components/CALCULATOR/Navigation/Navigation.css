@@ -1,0 +1,35 @@
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navigation__conteiner{
+    display: flex;
+    gap: 10px;
+}
+
+.navigation__button{
+    border: none;
+    border-radius: 15px;
+    width: 150px;
+    height: 30px;
+    font-size: 13px;
+    color: rgb(172, 171, 171);
+    background-color: rgb(157, 229, 193);
+}
+
+.navigation__button-inactive{
+    transition: background-color .3s ease-in-out;
+    transition: color .3s ease-in-out;
+    cursor: pointer;
+}
+.navigation__button-inactive:hover{
+    color: #FFF;
+    background-color: rgb(49, 230, 139);;
+}
+
+.navigation__button-action{
+    color: #FFF;
+    background-color: rgb(49, 230, 139);
+}

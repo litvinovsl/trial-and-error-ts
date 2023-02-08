@@ -1,0 +1,71 @@
+.calculation{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.calculation__credit-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.calculation__diagram{
+    margin-right: 70px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculation__diagram-paragraph{
+    font-size: 12px;
+}
+
+.calculation__credit-info-text{
+    margin-left: 70px;
+    max-width: 450px;
+}
+
+.calculation__credit-paragraph{
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+.pie{
+    --p:95;
+    --b:22px;
+    --c:rgb(43, 180, 180);
+    --w:150px;
+    
+    width:var(--w);
+    aspect-ratio:1;
+    position:relative;
+    display:inline-grid;
+    margin:5px;
+    place-content:center;
+    font-size:25px;
+    font-weight:400px;
+
+}
+
+.pie:before,
+.pie:after {
+  content:"";
+  position:absolute;
+  border-radius:50%;
+}
+.pie:before {
+  inset:0;
+  background:
+    radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
+  -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+          mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+}
+.pie:after {
+  inset:calc(50% - var(--b)/2);
+  background:var(--c);
+  transform:rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+}
