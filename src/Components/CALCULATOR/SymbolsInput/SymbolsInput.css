@@ -17,8 +17,24 @@
     cursor: pointer;
     font-size: 20px;
     color: rgb(78, 95, 95);
-
 }
+
+.conteiner__symbol_off{
+    display: flex;
+    border: 1px solid #ccdbe2;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    cursor:initial;
+    font-size: 20px;
+    background-color: rgb(173, 178, 178);
+    color: rgb(78, 95, 95);
+}
+/* 
+.conteiner__symbol_off:hover {
+    box-shadow: 1 0px;
+    opacity: .1;
+} */
 
 .conteiner__symbol:hover {
     box-shadow: 0 1px 0 0 white;
