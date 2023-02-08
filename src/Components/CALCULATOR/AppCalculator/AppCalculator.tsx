@@ -1,6 +1,8 @@
 import { useState, FC } from "react";
 import { Route, Switch } from 'react-router-dom';
 import Navigation from '../Navigation/Navigation';
+import Result from "../Result/Result";
+// import Calculator from "../Calculator/Calculator";
 import './AppCalculator.css';
 
 // interface INavigationCalculator {
@@ -36,7 +38,10 @@ function AppCalculator(){
         onClickTyda={handleClickTuda}
         isCalculation={isCalculation}
         isConverter={isConverter} />
+        <Result />
       <Switch>
+
+        {/* <Calculator /> */}
       </Switch>
     </div>
 
