@@ -2,6 +2,7 @@ import { useState, FC } from "react";
 import { Route, Switch } from 'react-router-dom';
 import Navigation from '../Navigation/Navigation';
 import Result from "../Result/Result";
+import SymbolsInput from "../SymbolsInput/SymbolsInput";
 // import Calculator from "../Calculator/Calculator";
 import './AppCalculator.css';
 
@@ -39,6 +40,7 @@ function AppCalculator(){
         isCalculation={isCalculation}
         isConverter={isConverter} />
         <Result />
+        <SymbolsInput />
       <Switch>
 
         {/* <Calculator /> */}
