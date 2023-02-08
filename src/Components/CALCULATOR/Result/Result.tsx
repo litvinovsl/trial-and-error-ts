@@ -1,8 +1,8 @@
 import './Result.css';
 
-function Result(){
+function Result({result}:any){
   return (
-    <div className='result'>dddd</div>
+    <div className='result'>{result}</div>
   );
 }
 

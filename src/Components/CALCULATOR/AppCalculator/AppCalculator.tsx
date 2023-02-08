@@ -32,6 +32,9 @@ function AppCalculator(){
 
   }
 
+  const [result, setResult] = useState('');
+
+
   return (
     <div className='app-calculator'>
       <Navigation
@@ -39,8 +42,8 @@ function AppCalculator(){
         onClickTyda={handleClickTuda}
         isCalculation={isCalculation}
         isConverter={isConverter} />
-        <Result />
-        <SymbolsInput />
+        <Result result={result} />
+        {isCalculation && <SymbolsInput result={result} setResult={setResult}/>}
       <Switch>
 
         {/* <Calculator /> */}
