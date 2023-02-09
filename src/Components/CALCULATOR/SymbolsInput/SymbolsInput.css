@@ -19,6 +19,13 @@
     color: rgb(78, 95, 95);
 }
 
+.conteiner__symbol_func{
+    background-color: rgb(155, 186, 118);
+}
+.conteiner__symbol_res{
+    background-color: rgb(207, 191, 130);
+}
+
 .conteiner__symbol_off{
     display: flex;
     border: 1px solid #ccdbe2;
